@@ -30,6 +30,9 @@ body {
     text-align: center;
     text-decoration: overline;
     border-radius: 30px;
+    background: linear-gradient(90deg, #00ffff, #ff00c3);
+    -webkit-background-clip: text;
+    background-clip: text;
    }
    
    .center::selection {
