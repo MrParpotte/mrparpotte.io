@@ -1,38 +1,92 @@
 body {
-    background: linear-gradient(#F1C40F, #800000);
-    text-align: center;
-    position: relative;
-    background-repeat: no-repeat;
-    height: 1000px;
-   }
-   
-  .buton {
-    background-color: lightgreen;
-    padding: 5px 1px 5px 1px;
-   }
-   
-   button {
-    border-radius: 20px 20px 20px 20px;
-    background-color: skyblue;
-   }
-   
-   h5 {
-    text-align: center;
-   }
-   
-   img {
-    border-radius: 20px;
-    width: 100px;
-   }
-   
-   .center {
-    border: black solid 5px;
-    text-align: center;
-    text-decoration: overline;
-    border-radius: 30px;
-    background: linear-gradient(90deg, #00ffff, #ff00c3);
-   }
-   
-   .center::selection {
-     background-color: aqua;
-   }
+  background: linear-gradient(#F1C40F, #800000);
+  text-align: center;
+  position: relative;
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+
+.buton {
+  background-color: lightgreen;
+  padding: 5px 1px 5px 1px;
+  border: 3px solid lightgreen;
+  margin-bottom: 75px;
+  margin-top: 50px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px lightgreen, 0 0 15px lightgreen, 0 0 25px lightgreen, 0 0 100px lightgreen;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  padding: 0.7em 2em;
+  border-radius: 10px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+  transition: 0.3s ease all;
+  z-index: 1;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin: auto;
+  width: 200px;
+}
+
+.buton:hover:before,
+button:focus:before {
+  transition: 0.5 all ease;
+  left: 0;
+  right: 0;
+  opacity: 1;
+}
+
+.buton:before {
+  transition: 0.5s all ease;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  right: 50%;
+  bottom: 0;
+  border-radius: 6px;
+  opacity: 0;
+  content: '';
+  background-color: #000000c7;
+  z-index: -1;
+}
+
+.buton:active {
+  transform: scale(0.9);
+}
+
+.buton:hover,
+.buton:focus {
+  color: white;
+}
+
+button {
+  border-radius: 20px 20px 20px 20px;
+  background-color: skyblue;
+}
+
+h5 {
+  text-align: center;
+}
+
+img {
+  border-radius: 20px;
+  width: 100px;
+}
+
+.center {
+  border: black solid 5px;
+  text-align: center;
+  text-decoration: overline;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #00ffff, #ff00c3);
+}
+
+.center::selection {
+  background-color: aqua;
+}
