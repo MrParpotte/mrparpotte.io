@@ -99,19 +99,32 @@ img {
   border-radius: 50%;
   width: 200px;
   height: 200px;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.12);
+  }
 }
 
 .center {
-  border: black solid 5px;
-  text-align: center;
-  border-radius: 30px;
+  background-size: cover;
+  background-clip: text;
   background: linear-gradient(90deg, #00ffff, #ff00c3);
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  -webkit-background-clip: text;
+  color: transparent;
   margin-bottom: 50px;
-}
-
-.center::selection {
-  background-color: rgb(55, 0, 255);
+  margin-top: 1px;
+  border-radius: 30px;
+  text-align: center;
 }
 
 .link {
@@ -135,7 +148,7 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
   margin: auto;
-  width: 200px;
+  width: 240px;
   margin-right: 50px;
 }
 
