@@ -192,6 +192,10 @@ button:focus:before {
   color: white;
 }
 
+#youtube::before {
+  background-color: #ff0000;
+}
+
 #discord {
   border: 3px solid #0004ff;
   margin-bottom: 75px;
@@ -203,6 +207,10 @@ button:focus:before {
 #discord:hover,
 #discord:focus {
   color: white;
+}
+
+#discord::before {
+  background-color: #0004ff;
 }
 
 #twitter {
@@ -218,6 +226,10 @@ button:focus:before {
   color: white;
 }
 
+#twitter::before {
+  background-color: #00ccff;
+}
+
 #reddit {
   border: 3px solid #ff9900;
   margin-bottom: 75px;
@@ -231,12 +243,16 @@ button:focus:before {
   color: white;
 }
 
+#reddit::before {
+  background-color: #ff9900;
+}
+
 #github {
-  border: 3px solid #000000;
+  border: 3px solid #260044;
   margin-bottom: 75px;
-  margin-top: 50px;
+  margin-top: 5px;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-  box-shadow: 0 0 5px #000000, 0 0 15px #000000, 0 0 25px #000000, 0 0 100px #000000;
+  box-shadow: 0 0 5px #260044, 0 0 15px #260044, 0 0 25px #260044, 0 0 100px #260044;
 }
 
 #github:hover,
@@ -244,10 +260,14 @@ button:focus:before {
   color: white;
 }
 
+#github::before {
+  background-color: #260044;
+}
+
 #twitch {
   border: 3px solid #a441f7;
   margin-bottom: 75px;
-  margin-top: 50px;
+  margin-top: 5px;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
   box-shadow: 0 0 5px #a441f7, 0 0 15px #a441f7, 0 0 25px #a441f7, 0 0 100px #a441f7;
 }
@@ -255,6 +275,27 @@ button:focus:before {
 #twitch:hover,
 #twitch:focus {
   color: white;
+}
+
+#twitch::before {
+  background-color: #a441f7;
+}
+
+#insta {
+  border: 3px solid #fd0088;
+  margin-bottom: 75px;
+  margin-top: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #fe007a, 0 0 15px #ff1132, 0 0 25px #ffc200, 0 0 100px #a702f2;
+}
+
+#insta:hover,
+#insta:focus {
+  color: white;
+}
+
+#insta::before {
+  background-color: #fd0088;
 }
 
 #guns {
@@ -270,17 +311,93 @@ button:focus:before {
   color: white;
 }
 
-#insta {
-  border: 3px solid #fd0088;
+#guns::before {
+  background-color: #70457b;
+}
+
+#steam {
+  border: 3px solid #1b5585;
   margin-bottom: 75px;
   margin-top: 5px;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
-  box-shadow: 0 0 5px #fe007a, 0 0 15px #ff1132, 0 0 25px #ffc200, 0 0 100px #a702f2;
+  box-shadow: 0 0 5px #1b5585, 0 0 15px #1b5585, 0 0 25px #1b5585, 0 0 100px #1b5585;
 }
 
-#insta:hover,
-#insta:focus {
+#steam:hover,
+#steam:focus {
   color: white;
+}
+
+#steam::before {
+  background-color: #1b5585;
+}
+
+#roblox {
+  border: 3px solid #a6b3bf;
+  margin-bottom: 75px;
+  margin-top: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #a6b3bf, 0 0 15px #a6b3bf, 0 0 25px #a6b3bf, 0 0 100px #a6b3bf;
+}
+
+#roblox:hover,
+#roblox:focus {
+  color: white;
+}
+
+#roblox::before {
+  background-color: #a6b3bf;
+}
+
+#snap {
+  border: 3px solid #ccc900;
+  margin-bottom: 75px;
+  margin-top: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #ccc900, 0 0 15px #ccc900, 0 0 25px #ccc900, 0 0 100px #ccc900;
+}
+
+#snap:hover,
+#snap:focus {
+  color: white;
+}
+
+#snap::before {
+  background-color: #ccc900;
+}
+
+#namemc {
+  border: 3px solid #000000;
+  margin-bottom: 75px;
+  margin-top: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #000000, 0 0 15px #000000, 0 0 25px #000000, 0 0 100px #000000;
+}
+
+#namemc:hover,
+#namemc:focus {
+  color: white;
+}
+
+#namemc::before {
+  background-color: #000000;
+}
+
+#mail {
+  border: 3px solid #38c0a9;
+  margin-bottom: 75px;
+  margin-top: 5px;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
+  box-shadow: 0 0 5px #38c0a9, 0 0 15px #38c0a9, 0 0 25px #38c0a9, 0 0 100px #38c0a9;
+}
+
+#mail:hover,
+#mail:focus {
+  color: white;
+}
+
+#mail::before {
+  background-color: #38c0a9;
 }
 
 .scanner span {
@@ -348,5 +465,13 @@ button:focus:before {
 }
 
 .deux {
+  display: inline-block;
+}
+
+.trois {
+  display: inline-block;
+}
+
+.quatre {
   display: inline-block;
 }
