@@ -475,3 +475,31 @@ button:focus:before {
 .quatre {
   display: inline-block;
 }
+
+#welc {
+  position: relative;
+  font-size: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 80px;
+}
+
+.text {
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
+}
+
+.hover-text {
+  position: absolute;
+  inset: 0;
+  width: 0%;
+  color: #b663ee;
+  overflow: hidden;
+  border-right: 6px solid #b663ee;
+  transition: 0.5 ease-in-out;
+}
+
+#welc:hover .hover-text {
+  width: 100%;
+  filter: drop-shadow(0 0 40px #b663ee);
+}
