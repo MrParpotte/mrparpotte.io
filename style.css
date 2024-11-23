@@ -6,6 +6,10 @@ body {
   height: 1000px;
 }
 
+.page-wrapper {
+  overflow: clip;
+}
+
 .buton {
   background-color: lightgreen;
   padding: 5px 1px 5px 1px;
@@ -402,13 +406,34 @@ button:focus:before {
 
 .scanner span {
   color: transparent;
-  font-size: 1.4rem;
+  font-size: 5rem;
   position: relative;
   overflow: hidden;
   font-weight: bold;
 }
 
 .scanner span::before {
+  content: "Bienvenue";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  border-right: 4px solid #17feff;
+  overflow: hidden;
+  color: #17feff;
+  animation: load91371 2s linear infinite;
+}
+
+.scanner2 span {
+  color: transparent;
+  font-size: 5rem;
+  position: relative;
+  overflow: hidden;
+  font-weight: bold;
+}
+
+.scanner2 span::before {
   content: "MrParpotte";
   position: absolute;
   top: 0;
@@ -474,32 +499,4 @@ button:focus:before {
 
 .quatre {
   display: inline-block;
-}
-
-#welc {
-  position: relative;
-  font-size: 5rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  line-height: 80px;
-}
-
-.text {
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.6);
-}
-
-.hover-text {
-  position: absolute;
-  inset: 0;
-  width: 0%;
-  color: #b663ee;
-  overflow: hidden;
-  border-right: 6px solid #b663ee;
-  transition: 0.5 ease-in-out;
-}
-
-#welc:hover .hover-text {
-  width: 100%;
-  filter: drop-shadow(0 0 40px #b663ee);
 }
